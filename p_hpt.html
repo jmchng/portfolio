@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>JMC | High Pony Tail</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+    $(function(){
+        $('.owl-showcase').owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: false,
+            autoWidth: true,
+            dots: false,
+        });
+
+        $('.btn_showcase').on('click',function(){
+            var $this = $(this);
+            var css = $this.find('.pic').css("background-image");
+            var galleryImg = css.replace(/(?:^url\(["']?|["']?\)$)/g, "");
+            var galleryTitle = $this.find('.title').html()
+            var galleryDscrpt = $this.find('.discript').html()
+            var showcaseImg = $('.showcase').find('img');
+            var showcaseTitle = $('.showcase').find('h4');
+            var showcaseDscrpt = $('.showcase').find('.discript');
+
+            $('.owl-item > .item').removeClass('active disabled');
+            $this.parents('.item').addClass('active disabled');
+            showcaseImg.attr('src',galleryImg)
+            showcaseTitle.html(galleryTitle)
+            showcaseDscrpt.html(galleryDscrpt)
+        })
+    })
+    </script>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg">
+			</a>
+			<ul class="nav hidden-xs">
+				<li>
+					<a href="index.html">projects</a>
+				</li>
+				<li>
+					<a href="about.html">about</a>
+				</li>
+			</ul>
+			<ul class="nav visible-xs">
+				<li>
+					<a href="javascript:;">
+						<i class="fa fa-bars"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="site-thread">
+						<a href="index.html">
+							projects
+						</a>
+						<span>></span>
+                        <h3>High Pony Tail</h3>
+					</div>
+				</div>
+			</div>
+            <div class="row">
+                <div class="col-xs-4 col-md-2 col-md-offset-2">
+                    <img src="img/hpt/1.png" alt="" class="img-responsive p-logo">
+                </div>
+                <div class="col-xs-8">
+                    ///
+                    <p>High Pony Tail is the character I created to post some image stories of my life. <br> And the high pony tail was also my personal style in my school time.</p>
+                    ///
+                </div>
+            </div>
+        </div>
+        <div class="container mt-30">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4">
+                    <div class="showcase">
+                        <h4>PLANK</h4>
+                        <img src="img/hpt/2.png" alt="" class="img-responsive">
+                        <div class="discript">My yoga instructor said plank is about straight your back from head to toe. But my butt was too big to get a PLANK done.</div>
+                    </div>
+            	</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+                    <div class="owl-carousel owl-showcase">
+                        <div class="item active disabled">
+                            <a href="javascript:;" class="btn_showcase">
+                                <div class="pic" style="background-image:url(img/hpt/2.png)"></div>
+                                <div class="title hidden">PLANK</div>
+                                <div class="discript hidden">My yoga instructor said plank is about straight your back from head to toe. <br>But my butt was too big to get a PLANK done.</div>
+                            </a>
+                            1
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="btn_showcase">
+                                <div class="pic" style="background-image:url(img/hpt/3.png)"></div>
+                                <div class="title hidden">Summer style</div>
+                                <div class="discript hidden">One day, I found I woke up in topless. <br>Way too hot in Summer.</div>
+                            </a>
+                            2
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="btn_showcase">
+                                <div class="pic" style="background-image:url(img/hpt/4.png)"></div>
+                                <div class="title hidden">No Shampoo for 5 Days</div>
+                                <div class="discript hidden">Let me teach you how to have fabulous hairstyle without shampoo within 5 days.</div>
+                            </a>
+                            3
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="btn_showcase">
+                                <div class="pic" style="background-image:url(img/hpt/5.png)"></div>
+                                <div class="title hidden">SHUT UP!</div>
+                                <div class="discript hidden">Don’t tell me that! <br>I don ’t want to know.</div>
+                            </a>
+                            4
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="btn_showcase">
+                                <div class="pic" style="background-image:url(img/hpt/6.png)"></div>
+                                <div class="title hidden">Pony Tail Tutorial</div>
+                                <div class="discript hidden">1. Get ready <br>2. Lean over to gather your hair to the top of your head. <br>3. Comb hair. <br>4. Stand straight and tie to a pony.</div>
+                            </a>
+                            5
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="btn_showcase">
+                                <div class="pic" style="background-image:url(img/hpt/7.png)"></div>
+                                <div class="title hidden">Reaction of Watching Taiwanese Talk Show</div>
+                                <div class="discript hidden">Speechless.</div>
+                            </a>
+                            6
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="btn_showcase">
+                                <div class="pic" style="background-image:url(img/hpt/8.png)"></div>
+                                <div class="title hidden">The Revange of Black Tea</div>
+                                <div class="discript hidden">DAMN...</div>
+                            </a>
+                            7
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="btn_showcase">
+                                <div class="pic" style="background-image:url(img/hpt/9.png)"></div>
+                                <div class="title hidden">Dress Code for Rainy Day</div>
+                                <div class="discript hidden">Wearing a swimsuit in heavy rain seems reasonable.</div>
+                            </a>
+                            8
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+        <div class="container">
+            <p>JIAMINCHENG © 2019</p> 
+            <ul class="nav">
+                <li>
+                    <a href="mailto:jamiecheng1008@gmail.com">
+                        <img src="img/ic_mail.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jchng18/" target="_blank">
+                        <img src="img/ic_linkedin.svg" alt="">
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="https://www.instagram.com/jm_chng/" target="_blank">
+                        <img src="img/ic_ig.svg" alt="">
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </footer>
+    <div class="modal modal-fullscreen fade" id="modal_menu">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <ul class="nav">
+                        <li>
+                            <a href="javascript:;" data-dismiss="modal">
+                                <img src="img/ic_close.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="modal-body">
+                    <ul class="">
+                        <li>
+                            <a href="index.html">projects</a>
+                        </li>
+                        <li>
+                            <a href="about.html">about</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

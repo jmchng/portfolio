@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>JMC</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+
+	<script>
+		
+		$(function(){
+
+			$('.owl-carousel').owlCarousel({
+			   items:1,
+
+			});
+
+			$('.recommend .cell .btn-group').on('click',function(){
+				$(this).parents('.cell').toggleClass('active');
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg">
+			</a>
+			<ul class="nav hidden-xs">
+				<li>
+					<a href="index.html" class="active">projects</a>
+				</li>
+				<li>
+					<a href="about.html">about</a>
+				</li>
+			</ul>
+			<ul class="nav visible-xs">
+				<li>
+					<a href="javascript:;" data-toggle="modal" data-target="#modal_menu">
+						<img src="img/ic_menu.svg" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section class="list-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-md-6">
+					<a href="p_kkday.html">
+						<div class="item">
+							<div class="img-bg" style="background-image: url(img/index/kkday_logo.svg)"></div>
+							<div class="overlay">
+								KKday
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-6">
+					<a href="p_ishelter.html">
+						<div class="item">
+							<div class="img-bg" style="background-image: url(img/index/1.svg)"></div>
+							<div class="overlay">
+								iShelter
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a href="p_bouquet.html">
+						<div class="item">
+							<div class="img-bg" style="background-image: url(img/bouquet/10.png)">
+								<div class="overlay">
+									BOUQUET
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a href="p_back.html">
+						<div class="item">
+							<div class="img-bg" style="background-image: url(img/index/8.png)"></div>
+							<div class="overlay">
+								BACK (Girl)
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a href="p_boundary.html">
+						<div class="item">
+							<div class="img-bg" style="background-image: url(img/index/4.png)">
+								<div class="overlay">Boundary</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a href="p_hpt.html">
+						<div class="item">
+							<div class="img-bg" style="background-image: url(img/index/5.png)">
+								<div class="overlay">High Pony Tail</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-6">
+					<a href="p_jp16.html">
+						<div class="item">
+							<div class="img-bg" style="background-image: url(img/index/6.png)">
+								<div class="overlay">Japan 16 - Short Film</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-6">
+					<a href="p_nnt.html">
+						<div class="item">
+							<div class="img-bg" style="background-image: url(img/index/film_TPE.png)">
+								<div class="overlay">Nighty Night TPE - Short Film</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<p>JIAMINCHENG © 2019</p> 
+			<ul class="nav">
+				<li>
+					<a href="mailto:jamiecheng1008@gmail.com">
+						<img src="img/ic_mail.svg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/jchng18/" target="_blank">
+						<img src="img/ic_linkedin.svg" alt="">
+					</a>
+				</li>
+				<!-- <li>
+					<a href="https://www.instagram.com/jm_chng/" target="_blank">
+						<img src="img/ic_ig.svg" alt="">
+					</a>
+				</li> -->
+			</ul>
+		</div>
+	</footer>
+	<div class="modal modal-fullscreen fade" id="modal_menu">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<ul class="nav">
+						<li>
+							<a href="javascript:;" data-dismiss="modal">
+								<img src="img/ic_close.svg" alt="">
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<div class="modal-body">
+					<ul class="">
+						<li>
+							<a href="index.html">projects</a>
+						</li>
+						<li>
+							<a href="about.html">about</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+*{
+	box-sizing: border-box;
+	}
+body{
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	}
+a{
+	outline: none;
+	text-decoration: none;
+	}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+hr{
+	border-top: 1px solid #eee;
+	margin: 20px 0;
+	}
+.bg-grey{
+	background: #f4f4f4;
+}
+.container{
+	padding: 0 30px;
+}
+.pt-30{
+	padding-top: 30px;
+}
+.mt-30{
+	margin-top: 30px;
+}
+.mv-30{
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+.pv-10{
+	padding: 10px 0;
+}
+h4::before{
+	content: '';
+	display: inline-block;
+	margin-bottom: -3px;
+	margin-right: 10px;
+	height: 18px;
+	border: 2px solid #333;
+	border-radius: 5px;
+}
+header.header{
+	padding: 30px 0;
+}
+header.header .container,
+footer .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo img{
+	height: 50px;
+}
+ul.nav{
+	flex: 1 1 auto;
+	text-align: right;
+	vertical-align: middle;
+}
+ul.nav li{
+	display: inline-block;
+}
+ul.nav li a{
+	color: #4a4a4a;
+	text-decoration: underline;
+}
+section{
+	margin: 20px 0;
+	overflow: hidden;
+}
+.list-section .item{
+	height: 200px;
+	margin-bottom: 30px;
+	border-radius: 8px;
+	overflow: hidden;
+	position: relative;
+}
+.list-section .item .img-bg{
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	transition: .3s all ease-in-out;
+}
+.list-section .item .overlay{
+	padding: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	transition: .3s;
+	color: white;
+	opacity: 0;
+	display: flex;
+	box-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8rem;
+}
+.list-section a:hover .item,
+.list-section a:hover .item .img-bg,
+.list-section a:hover .item .overlay,
+.list-section a:focus .item,
+.list-section a:focus .item .img-bg,
+.list-section a:focus .item .overlay{
+	border-radius: 8px;
+}
+.list-section a:hover .item .img-bg{
+	transform: scale(1.02);
+}
+.list-section a:hover .item .overlay{
+	opacity: 1;
+}
+.site-thread{
+	margin-bottom: 40px;
+}
+.site-thread a{
+	color: #666;
+	text-decoration: underline;
+}
+.site-thread span{
+	margin: 0 10px;
+	color: #999;
+}
+.site-thread h3{
+	font-weight: 700;
+}
+img.p-logo{
+	width: 150px;
+	border-radius: 25%;
+	border: none;
+	margin-right: 20px;
+}
+.img-responsive{
+	margin-bottom: 20px;
+}
+.showcase{
+	margin-bottom: 40px;
+}
+.showcase img{
+	margin: 10px 0;
+}
+.seamless-post img.img-responsive{
+	margin: 0;
+}
+.discript{
+	padding: 10px;
+}
+.owl-carousel{
+	margin-bottom: 40px;
+}
+.owl-banner .item{
+	width: 25vw;
+}
+.owl-banner .item img{
+	width: 100%;
+	height: auto;
+	border: solid 1px #eee;
+}
+.owl-showcase .owl-stage{
+	margin: auto;
+}
+.owl-showcase .item .pic{
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: solid 1px #eee;
+}
+.owl-showcase .owl-dots{
+	text-align: center;
+}
+.owl-showcase button.owl-dot{
+	height: 5px;
+	width: 5px;
+	background-color: #eee;
+	margin-right: 5px;
+}
+.owl-showcase button.owl-dot.active{
+	background-color: #ccc;
+}
+.owl-stage-outer{
+	overflow: visible !important;
+}
+.modal .modal-content{
+	border-radius: 0;
+}
+.modal.modal-fullscreen .modal-dialog{
+	margin: 0;
+}
+.modal.modal-fullscreen .modal-content{
+	width: 100%;
+	height: 100%;
+}
+.modal.modal-fullscreen .modal-header{
+	padding: 30px;
+	border: none;
+}
+.modal.modal-fullscreen .modal-body{
+	height: calc(100vh - 100px);
+}
+#modal_menu ul{
+	text-align: center;
+}
+#modal_menu ul li a{
+	display: inline-block;
+	padding: 10px 15px;
+	color: #4a4a4a;
+}
+footer{
+	color: #ccc;
+	padding: 30px 0;
+}
+footer p{
+	font-size: 10px;
+	margin: 0;
+}
+footer i{
+	font-size: 15px;
+}
+@media (max-width: 797px) {
+	.list-section .item{
+		height: 35vw;
+	}
+	.owl-banner .item{
+		width: 80vw;
+	}
+	
+}
