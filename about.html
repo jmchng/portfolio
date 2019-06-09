@@ -13,16 +13,36 @@
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script>
+		$(function(){
+			// Nav change position while scrolling
+			var prev = 0;
+	
+			$(window).on('scroll', function() {
+				var $window = $(window);
+				var $header = $('.header')
+				var $topHeight = $('.header').outerHeight();
+	
+				if ($window.scrollTop() > $topHeight) {
+					var scrollTop = $window.scrollTop();
+	
+					$header.toggleClass('slideout', scrollTop > prev);
+	
+					prev = scrollTop;
+				}
+			})
+		})
+	</script>
 </head>
 <body>
-	<header class="header">
+    <header class="header">
 		<div class="container">
 			<a href="index.html" class="logo">
 				<img src="img/logo.svg">
 			</a>
 			<ul class="nav hidden-xs">
 				<li>
-					<a href="index.html">projects</a>
+					<a href="index.html" class="active">projects</a>
 				</li>
 				<li>
 					<a href="about.html">about</a>
@@ -30,8 +50,8 @@
 			</ul>
 			<ul class="nav visible-xs">
 				<li>
-					<a href="javascript:;">
-						<i class="fa fa-bars"></i>
+					<a href="javascript:;" data-toggle="modal" data-target="#modal_menu">
+						<img src="img/ic_menu.svg" alt="">
 					</a>
 				</li>
 			</ul>

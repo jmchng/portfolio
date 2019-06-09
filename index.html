@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="I'm an UI designer transferred from garments industry.">
 	<title>JMC</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -17,16 +18,30 @@
 	<script>
 		
 		$(function(){
-
-			$('.owl-carousel').owlCarousel({
-			   items:1,
-
-			});
-
 			$('.recommend .cell .btn-group').on('click',function(){
 				$(this).parents('.cell').toggleClass('active');
 			});
 
+			if (jQuery(window).width() < 640) {
+				$('.list-section a').addClass('active');
+			};
+
+			// Nav change position while scrolling
+			var prev = 0;
+
+			$(window).on('scroll', function() {
+				var $window = $(window);
+				var $header = $('.header')
+				var $topHeight = $('.header').outerHeight();
+
+				if ($window.scrollTop() > $topHeight) {
+					var scrollTop = $window.scrollTop();
+
+					$header.toggleClass('slideout', scrollTop > prev);
+
+					prev = scrollTop;
+				}
+			})
 		});
 
 	</script>
@@ -39,7 +54,7 @@
 			</a>
 			<ul class="nav hidden-xs">
 				<li>
-					<a href="index.html" class="active">projects</a>
+					<a href="index.html">projects</a>
 				</li>
 				<li>
 					<a href="about.html">about</a>
@@ -57,7 +72,7 @@
 	<section class="list-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6 col-md-6">
+				<div class="col-xs-6">
 					<a href="p_kkday.html">
 						<div class="item">
 							<div class="img-bg" style="background-image: url(img/index/kkday_logo.svg)"></div>
@@ -67,7 +82,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-xs-6 col-md-6">
+				<div class="col-xs-6">
 					<a href="p_ishelter.html">
 						<div class="item">
 							<div class="img-bg" style="background-image: url(img/index/1.svg)"></div>
@@ -110,27 +125,24 @@
 				<div class="col-xs-6 col-md-3">
 					<a href="p_hpt.html">
 						<div class="item">
-							<div class="img-bg" style="background-image: url(img/index/5.png)">
-								<div class="overlay">High Pony Tail</div>
-							</div>
+							<div class="img-bg" style="background-image: url(img/index/5.png)"></div>
+							<div class="overlay">High Pony Tail</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-xs-6 col-md-6">
+				<div class="col-xs-6">
 					<a href="p_jp16.html">
 						<div class="item">
-							<div class="img-bg" style="background-image: url(img/index/6.png)">
-								<div class="overlay">Japan 16 - Short Film</div>
-							</div>
+							<div class="img-bg" style="background-image: url(img/index/6.png)"></div>
+							<div class="overlay">Japan 16</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-xs-6 col-md-6">
+				<div class="col-xs-6">
 					<a href="p_nnt.html">
 						<div class="item">
-							<div class="img-bg" style="background-image: url(img/index/film_TPE.png)">
-								<div class="overlay">Nighty Night TPE - Short Film</div>
-							</div>
+							<div class="img-bg" style="background-image: url(img/index/film_TPE.png)"></div>
+							<div class="overlay">Nighty Night TPE</div>
 						</div>
 					</a>
 				</div>
